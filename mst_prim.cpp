@@ -360,19 +360,19 @@ int main()
   char op;
   while(continuar==true)
   {
-    system("cls");
+    system("cls"); // Comando do terminal que limpa a tela, mas só funciona no Windows!
     cout<< telaInicial;
     cin>> op;
-    switch (op)
+    switch (op) // Executa a ação solicitada pelo usuário
     {
       case '1':
         system("cls");
         cout<< avisoGerarGrafo;
-        system("pause");
+        system("pause"); // Comando que faz uma pausa para que o usuário consiga ler o conteúdo da mensagem, só funciona no Windows!
         system("cls");
-        if(leitura.is_open())
+        if(leitura.is_open()) // Se o arquivo foi aberto corretamente
         {
-          while(!leitura.eof())
+          while(!leitura.eof()) // Enquanto não chegar ao fim do arquivo
           {
             leitura >> x;
             if(cont==0)
