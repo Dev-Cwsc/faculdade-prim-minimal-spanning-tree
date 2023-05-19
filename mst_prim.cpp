@@ -1,11 +1,13 @@
+// Declarando as bibliotecas
 #include <limits.h>
 #include <iostream>
 #include <fstream>
 #include <time.h>
 
+// Para facilitar a escrita do código e não ter que referenciar à classe std
 using namespace std;
 
-//Telas da aplicação
+// Telas da aplicação
 const string telaInicial = "========== MINIMUM SPANNING TREE (PRIM METHOD) ==========\n"
                            "|                                                       |\n"
                            "| Select an option:                                     |\n"
@@ -123,6 +125,7 @@ const string opcaoInvalida = "======================== WARNING =================
                              "|                                                       |\n"
                              "=========================================================\n";
 
+// Structs utilizadas
 struct verticeAdj
 {
   int destino;
@@ -155,6 +158,7 @@ struct minHeap
   verticeMH **lista;
 };
 
+// Sobrecarga da função temporizadora utilizada para fazer pausas durante a exibição dos resultados
 void sleep(clock_t wait)
 {
   clock_t goal = (wait+clock());
