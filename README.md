@@ -5,4 +5,4 @@
 # Como usar?
 - Primeiramente, um compilador de C++ deve ser instalado na máquina;
 - Em seguida, compilar o arquivo "mst_prim.cpp" e gerar o executável;
-- Também é necessário um arquivo txt com os dados de entrada. As instruções sobre como criar esse arquivo estão no código, basta executar o algoritmo e selecionar a opção no menu.
+- Também é necessário um arquivo txt e inserir nele o grafo de entrada. As instruções sobre como criar esse arquivo estão no código, basta executar o algoritmo e selecionar a opção no menu.
